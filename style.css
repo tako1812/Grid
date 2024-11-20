@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Helvatica";
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: #f9fafa;
+  /*height: 100vh;
+  width: 100vw;*/
+}
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
+
+}
+.section-package {
+  padding: 6rem 2rem;
+  
+}
+
+.package-countainer {
+  max-width: 120rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+}
+
+.countainer123 {
+  grid-column: 2 / -1;
+  /*grid-row: 2 / span 3;*/
+ 
+}
+
+
+.package-img {
+  width: 100%;
+ 
+
+  border-radius: 3%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+}
+/*
+.package-img3 {
+  height:80%;
+  grid-column: 2/ span 3;
+  grid-row: 2 / span 3;
+}*/
+.package-text-box {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0 2rem;
+
+  position: absolute;
+  bottom: 20%;
+}
+.package-text {
+  font-size: 1.3rem;
+  color: #fff;
+}
+.arrow-icon-package {
+  height: 1.5rem;
+  width: 3rem;
+  color: #fff;
+}
+.package-cta {
+  font-size: 1.5rem;
+  color: #fff;
+}
+.grid-1-section {
+  padding: 5rem 0;
+}
+
+/* SPANNING grid item*/
+.grid-container {
+  background-color: #eee;
+  width:120rem;
+  margin:10rem auto;
+
+  display:grid;
+  grid-template-rows:repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-gap:5rem;
+
+}
+.item {
+  padding:5rem;
+  font-size:3rem;
+  color:#fff;
+
+  
+}
+/* პირველი */
+/*
+.item--1 {
+  background-color: orangered;
+  grid-row:2 / 3;
+  grid-column: 2 / 4;
+}
+.item--2 {
+  background-color: yellowgreen;
+}
+.item--3 {
+  background-color: blueviolet;
+}
+.item--4 {
+  background-color: palevioletred;
+}
+.item--5 {
+  background-color: royalblue;
+}
+.item--6 {
+  background-color: goldenrod;
+  grid-column:1 / 4;
+}
+*/
+
+/* მეორე  ერთიდაიგივე grid cell-ში შეიძლება გვქონდეს რამდენიმე grid item-ი
+pink-ის უკან გვაქვს ლურჯი*/
+
+.item--1 {
+  background-color: orangered;
+
+}
+.item--2 {
+  background-color: yellowgreen;
+}
+.item--3 {
+  background-color: blueviolet;
+  
+}
+.item--4 {
+  background-color: palevioletred;
+  grid-column:1 / 3;  
+  grid-row:2 / 3;     /* 1) 141-142*/
+  z-index: 10; 
+
+}
+.item--5 {
+  background-color: royalblue;
+  grid-row:2 / 3;
+  grid-column:2 / 3;
+  /*z-index: 100;*/    /* 2) */
+}
+.item--6 {
+  background-color: goldenrod;
+  /*grid-column:1 / -1;*/        /*  3) */
+}
